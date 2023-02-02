@@ -10,22 +10,25 @@
     <title>Portfolio</title>
 </head>
 <body>
+
 <div class="navBar" id="myNavBar">
-    <a class="active" href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About Me</a>
-    <a href="#contact">Contact</a>
+    <a class="active" href="#">Home</a>
+    <a href="javascript:void(0);" onclick="javascript:nav('projects')">Projects</a>
+    <a href= "javascript:void(0);" onclick="javascript:nav('about')">About Me</a>
+    <a href="javascript:void(0);" onclick="javascript:nav('contact')">Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i></a>
 </div>
+
 <div class="hero">
     <img src="./ZayDavid.JPG" class="zayPic responsive">
     <div class="hero-text">
         <h1>Hello, My Name is Isaiah!</h1>
         <p>I am a self-taught software developer</p>
-        <button onclick="nav()">Get To Know Me</button>
+        <button onclick="javascript:nav('me')">Get To Know Me</button>
     </div>
 </div>
+
 <div class="heroTwo" id="me">
     <h1 class="head">A Little Bit About Me</h1>
     <div class="bar"></div>
@@ -34,7 +37,8 @@
         That is what attracted me to Web Development,
         I am determined to continue to expand my knowledge and understanding so as to use my skills to positively impact those that I have the opportunity to work with. </p>
 </div>
-<div>
+
+<div class="experiences">
     <h1 class="head" id="projects">My Projects</h1>
     <div class="bar"></div>
     <div class="exp">
@@ -51,7 +55,7 @@
             <h3>Medical Notation App</h3>
         </div>
     </div>
-    <div>
+    <div class="skills">
         <h4>Skills & Technologies:</h4>
         <p> HTML | CSS | Javascript | React | Debugging | Networking | Git | Github | Object-oriented programming</p>
         <p>I always have had a love for tech ever since I was young.

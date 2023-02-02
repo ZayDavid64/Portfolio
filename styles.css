@@ -110,6 +110,10 @@
 }
 
 .workSection .workSubSection h3{
-    font-size: 3vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.skills{
     text-align: center;
 }

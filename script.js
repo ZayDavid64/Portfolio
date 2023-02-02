@@ -7,6 +7,6 @@ function myFunction() {
     }
   }
 
-function nav(){
-        window.location.hash= "#me"
+function nav(link){
+        window.location.href= "#"+link
      }
