@@ -39,6 +39,7 @@
     background-color:#333;
     height: 1vh;
     width: 100%;
+    margin-bottom: 15px
   }
 
   .hero{
@@ -116,4 +117,40 @@
 
 .skills{
     text-align: center;
+}
+
+.head{
+    margin-top: 100px
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputs{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px
+}
+
+.hand.responsive{
+    width: 100%;
+    height: auto
+}
+
+.body{
+    color: white;
+    font-size: 20px;
+}
+
+.mail{
+    width: 10vw;
+    height: auto;
+    position: relative;
+    left: 50%;
+    margin-bottom: 30px;
+    background-color: #5A5A5A;
 }

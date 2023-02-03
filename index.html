@@ -32,17 +32,17 @@
 <div class="heroTwo" id="me">
     <h1 class="head">A Little Bit About Me</h1>
     <div class="bar"></div>
-    <p>I am a Frontend Web Developer who has a deep love for experiencing and learning new ideas, 
+    <p class="body">I am a Frontend Web Developer who has a deep love for experiencing and learning new ideas, 
         concepts, and technology.
         That is what attracted me to Web Development,
         I am determined to continue to expand my knowledge and understanding so as to use my skills to positively impact those that I have the opportunity to work with. </p>
 </div>
 
-<div class="experiences">
-    <h1 class="head" id="projects">My Projects</h1>
+<div id="projects">
+    <h1 class="head" >My Projects</h1>
     <div class="bar"></div>
     <div class="exp">
-        <p>Here are some of my finished projects, along with some that are currently in development</p>
+        <p class="body">Here are some of my finished projects, along with some that are currently in development</p>
     </div>
     <div class="workSection">
         <div class="workSubSection">
@@ -57,12 +57,34 @@
     </div>
     <div class="skills">
         <h4>Skills & Technologies:</h4>
-        <p> HTML | CSS | Javascript | React | Debugging | Networking | Git | Github | Object-oriented programming</p>
-        <p>I always have had a love for tech ever since I was young.
+        <p class="body"> HTML | CSS | Javascript | React | Debugging | Networking | Git | Github | Object-oriented programming</p>
+        <p class="body">I always have had a love for tech ever since I was young.
             The first language I ever taught myself was Python,
             so that I could use the text editor in Adobe After Effects to make
             proceduralized special effects in my videos.
         </p>
+    </div>
+</div>
+
+<div id="contact">
+    <h1 class="head" >Lets Talk!</h1>
+    <div class="bar"></div>
+    <p class="body">Feel free to leave me a message</p>
+    <button class="mail" onclick="javascript:contact()"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+    <div class="contacts">
+        <div>
+        <img src="./blackhand.jpeg" class="hand responsive">
+        </div>
+        <div class="info">
+        <form>
+         <div class="inputs">
+            <label for="fName">First Name</label>
+            <input type="text" id="fName" name="firstN" placeholder="John" />
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName" name="lastN" placeholder="Smith" />
+         </div>
+        </form>
+        </div>
     </div>
 </div>
     
