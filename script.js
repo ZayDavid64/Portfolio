@@ -1,11 +1,13 @@
-function myFunction() {
+let bars= document.getElementsByClassName("icon")[0]
+console.log(bars)
+bars.addEventListener("click",()=> {
     let x = document.getElementById("myNavBar");
     if (x.className === "navBar") {
       x.className += " responsive";
     } else {
       x.className = "navBar";
     }
-  }
+  })
 
 function nav(link){
         window.location.href= "#"+link
@@ -21,9 +23,17 @@ function contact(){
      }
 }
 
-window.addEventListener("scroll",function scroll(){
-    let nav= document.getElementById('myNavBar')
-    if(document.body.scrollTop > 20){
-        nav.style.top= "0"
-    }
-})
+const body= document.body;
+let lastScroll= 0
+
+/*window.addEventListener("scroll", ()=>{
+  const currentScroll= window.scrollY
+  let myNav= document.getElementById("myNavBar")
+  if(currentScroll > 20 ){
+   myNav.style.opacity= 100
+  }
+  else{
+    myNav.style.opacity= 0
+  }
+  console.log(currentScroll)
+})*/
