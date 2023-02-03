@@ -36,8 +36,8 @@
   }
 
   .bar{
-    background-color:#333;
-    height: 1vh;
+    background-color:#551A8B;
+    height: 10px;
     width: 100%;
     margin-bottom: 15px
   }
@@ -133,7 +133,8 @@
 .inputs{
     display: flex;
     flex-flow: column wrap;
-    gap: 10px
+    gap: 10px;
+    width: 45vw;
 }
 
 .hand.responsive{
@@ -146,11 +147,19 @@
     font-size: 20px;
 }
 
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .mail{
-    width: 10vw;
+    width: 100px;
     height: auto;
-    position: relative;
-    left: 50%;
     margin-bottom: 30px;
     background-color: #5A5A5A;
+}
+
+textarea{
+    height: 17vh
 }

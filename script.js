@@ -12,7 +12,7 @@ function nav(link){
      }
 
 function contact(){
-     let cont= document.getElementsByClassName("contacts")
+     let cont= document.getElementsByClassName("contacts")[0]
      if(cont && cont.style.display == "flex"){
      cont.style.display= "none"
      }
@@ -20,3 +20,10 @@ function contact(){
         cont.style.display= "flex"
      }
 }
+
+window.addEventListener("scroll",function scroll(){
+    let nav= document.getElementById('myNavBar')
+    if(document.body.scrollTop > 20){
+        nav.style.top= "0"
+    }
+})
