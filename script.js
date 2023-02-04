@@ -1,7 +1,7 @@
 let bars= document.getElementsByClassName("icon")[0]
 console.log(bars)
+let x = document.getElementById("myNavBar");
 bars.addEventListener("click",()=> {
-    let x = document.getElementById("myNavBar");
     if (x.className === "navBar") {
       x.className += " responsive";
     } else {
