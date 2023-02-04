@@ -1,13 +1,12 @@
-let bars= document.getElementsByClassName("icon")[0]
-console.log(bars)
-bars.addEventListener("click",()=> {
+function myFunction() {
     let x = document.getElementById("myNavBar");
     if (x.className === "navBar") {
       x.className += " responsive";
+      
     } else {
       x.className = "navBar";
     }
-  })
+  }
 
 function nav(link){
         window.location.href= "#"+link
