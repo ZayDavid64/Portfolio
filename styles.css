@@ -36,7 +36,7 @@
 
   body, html{
     height: 100%;
-    background-color: #5A5A5A
+    background:linear-gradient(to right, #5A5A5A 0%, #333 100%);
   }
 
   .head{
@@ -86,10 +86,24 @@
     height: 4vh;
     width: auto
   }
+
 .navBar{
     background-color: #333;
     overflow: hidden;
 }
+
+.hero button{
+      border: none;
+      width: 200px;
+      height: 50px
+    }
+
+@media screen and (max-width: 600px){
+  .hero button{
+        width: 150px;
+        height: 25px
+      }
+    }
 
 .navBar a{
     float: left;
@@ -134,7 +148,7 @@
 }
 
 .contacts{
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -155,6 +169,7 @@
 .body{
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 .button{
@@ -164,15 +179,24 @@
 }
 
 .mail{
-    width: 100px;
-    height: auto;
+    width: 200px;
+    height: 50px;
     margin-bottom: 30px;
     background-color: #5A5A5A;
+    border: none;
+}
+
+.mail:hover{
+  background-color: #333;
+  color:#D3D3D3;
+  scale: 120%
 }
 
 textarea{
     height: 17vh
 }
 
-
-/*javascript:void(0);
+input{
+  border-radius: 15%, 0%;
+  border: none;
+}

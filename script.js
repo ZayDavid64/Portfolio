@@ -2,6 +2,7 @@ function myFunction() {
     let x = document.getElementById("myNavBar");
     if (x.className === "navBar") {
       x.className += " responsive";
+      window.scrollY== 2000
       
     } else {
       x.className = "navBar";
@@ -12,27 +13,16 @@ function nav(link){
         window.location.href= "#"+link
      }
 
-function contact(){
-     let cont= document.getElementsByClassName("contacts")[0]
+const cont= document.getElementsByClassName("contacts")[0]
+let mail= document.getElementsByClassName("mail")[0]
+mail.addEventListener("click",() =>{
      if(cont && cont.style.display == "flex"){
      cont.style.display= "none"
      }
      else{
         cont.style.display= "flex"
      }
-}
+     window.scrollTo(0, document.body.scrollHeight);
+})
 
-const body= document.body;
-let lastScroll= 0
 
-/*window.addEventListener("scroll", ()=>{
-  const currentScroll= window.scrollY
-  let myNav= document.getElementById("myNavBar")
-  if(currentScroll > 20 ){
-   myNav.style.opacity= 100
-  }
-  else{
-    myNav.style.opacity= 0
-  }
-  console.log(currentScroll)
-})*/

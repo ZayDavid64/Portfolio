@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./script.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
     <a href="javascript:void(0);" onclick="javascript:nav('projects')">Projects</a>
     <a href= "javascript:void(0);" onclick="javascript:nav('about')">About Me</a>
     <a href="javascript:void(0);" onclick="javascript:nav('contact')">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="#" class="icon" id="icons">
         <i class="fa fa-bars"></i></a>
 </div>
 
@@ -69,9 +68,9 @@
 <div id="contact">
     <h1 class="head" >Lets Talk!</h1>
     <div class="bar"></div>
-    <p class="body">Feel free to leave me a message</p>
+    <p class="body">For Any Business Inquiry's Please Fill Out The Form Below</p>
     <div class=button>
-    <button class="mail" onclick="javascript:contact()"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
+    <button class="mail">Leave Me A Message</button>
     </div>
     <div class="contacts">
         <div>
@@ -80,12 +79,13 @@
         <div class="info">
         <form>
          <div class="inputs">
-            <label for="fName">First Name</label>
-            <input type="text" id="fName" name="firstN" placeholder="John" />
-            <label for="lName">Last Name</label>
-            <input type="text" id="lName" name="lastN" placeholder="Smith" />
+            <label for="fName">Full Name</label>
+            <input type="text" id="fName" name="firstN" placeholder="John Smith" />
+            <label for="lName">Email</label>
+            <input type="email" id="lName" name="lastN" placeholder="helpme@gmail.com" />
             <label for="subject">Subject</label>
-            <textarea if="subject" placeholder="I'd love to get to know you more"></textarea>
+            <textarea if="subject" placeholder="What Can I Help You With"></textarea>
+            <button type="submit"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>
          </div>
         </form>
         </div>
@@ -93,4 +93,5 @@
 </div>
     
 </body>
+<script src="./script.js"></script>
 </html>
