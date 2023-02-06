@@ -2,7 +2,6 @@ function myFunction() {
     let x = document.getElementById("myNavBar");
     if (x.className === "navBar") {
       x.className += " responsive";
-      window.scrollY== 2000
       
     } else {
       x.className = "navBar";
