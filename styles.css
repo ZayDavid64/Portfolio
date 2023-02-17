@@ -28,6 +28,21 @@
   }
 }
 
+@media screen and (max-width: 600px){
+  .hero button{
+        width: 150px;
+        height: 25px
+      }
+    }
+
+
+  body, html{
+    width: 100vw;
+    height: 100%;
+    background:linear-gradient(to right, #5A5A5A 0%, #333 100%);
+}
+
+
     .navBar{
       position: fixed;
       top: 0;
@@ -35,6 +50,8 @@
       opacity: 100%;
       z-index: 3;
       width: 100%;
+      background-color: #333;
+      overflow: hidden;
     }
 
     .navBar.responsive a {
@@ -43,9 +60,24 @@
       text-align: left;
   }
 
-  body, html{
-    height: 100%;
-    background:linear-gradient(to right, #5A5A5A 0%, #333 100%);
+  .navBar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navBar a.active {
+    background-color: #551A8B;
+    color: white;
+  }
+
+  .navBar .icon {
+    display: none;
+}
+
+  .zayPic.responsive{
+    width: 100%;
+    height: auto;
+    z-index: 0;
   }
 
   .head{
@@ -68,10 +100,13 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    width: 100vw;
+    height:auto
   }
 
 .hero button{
   background: linear-gradient(to right, #CBC3E3 0%, #B19CD7 100%);
+  margin: 10px;
 }
 
   .hero-img{
@@ -81,16 +116,15 @@
     margin-top: 40px;
   }
 
-  .zayPic.responsive{
-    width: 100%;
-    height: auto;
-    z-index: 0;
-  }
-
   .hero-text{
     color:white;
     font-size: 2vw;
     z-index: 0;
+  }
+
+  .hero-text button{
+    height: 4vh;
+    width: auto
   }
 
   .heroTwo{
@@ -99,15 +133,7 @@
     padding: 10px;
   }
 
-  .hero-text button{
-    height: 4vh;
-    width: auto
-  }
 
-.navBar{
-    background-color: #333;
-    overflow: hidden;
-}
 
 .hero button{
       border: none;
@@ -115,12 +141,6 @@
       height: 50px
     }
 
-@media screen and (max-width: 600px){
-  .hero button{
-        width: 150px;
-        height: 25px
-      }
-    }
 
 .navBar a{
     float: left;
@@ -129,20 +149,6 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-.navBar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .navBar a.active {
-    background-color: #551A8B;
-    color: white;
-  }
-
-  .navBar .icon {
-    display: none;
 }
 
 .workSection{
