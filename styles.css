@@ -55,7 +55,7 @@
   }
 
   .bar{
-    background-color:#551A8B;
+    background:linear-gradient(to right, #CBC3E3, #551A8B);
     height: 10px;
     width: 100%;
     margin-bottom: 15px
@@ -70,10 +70,14 @@
     flex-wrap: wrap;
   }
 
+.hero button{
+  background: linear-gradient(to right, #CBC3E3 0%, #B19CD7 100%);
+}
+
   .hero-img{
     width: 50%;
     padding: 10px;
-    background-color:#551A8B;
+    background:linear-gradient(to right, #CBC3E3 0%, #551A8B 100%);
     margin-top: 40px;
   }
 
@@ -81,7 +85,6 @@
     width: 100%;
     height: auto;
     z-index: 0;
-    filter: grayscale(75%)
   }
 
   .hero-text{
