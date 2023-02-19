@@ -39,7 +39,7 @@
   body, html{
     width: 100vw;
     height: 100%;
-    background:linear-gradient(to right, #5A5A5A 0%, #333 100%);
+    background:#656A60;
 }
 
 
@@ -50,7 +50,7 @@
       opacity: 100%;
       z-index: 3;
       width: 100%;
-      background-color: #333;
+      background-color: #D4BBDD;
       overflow: hidden;
     }
 
@@ -66,7 +66,7 @@
   }
 
   .navBar a.active {
-    background-color: #551A8B;
+    background-color: #BD97CB;
     color: white;
   }
 
@@ -87,9 +87,9 @@
   }
 
   .bar{
-    background:linear-gradient(to right, #CBC3E3, #551A8B);
+    background:linear-gradient(to right, #D4BBDD, #BD97CB);
     height: 10px;
-    width: 100%;
+    width: 25%;
     margin-bottom: 15px
   }
 
@@ -101,25 +101,29 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100vw;
-    height:auto
+    height:auto;
+    margin-top: 100px;
+    margin-bottom: 300px
   }
 
 .hero button{
-  background: linear-gradient(to right, #CBC3E3 0%, #B19CD7 100%);
+  background: linear-gradient(to right, #D4BBDD 0%, #BD97CB 100%);
   margin: 10px;
 }
 
   .hero-img{
-    width: 50%;
+    width: 35%;
     padding: 10px;
-    background:linear-gradient(to right, #CBC3E3 0%, #551A8B 100%);
+    background:linear-gradient(to right, #D4BBDD 0%, #BD97CB 100%);
     margin-top: 40px;
   }
 
   .hero-text{
     color:white;
+    width:50%;
     font-size: 2vw;
     z-index: 0;
+    text-align: left;
   }
 
   .hero-text button{
@@ -127,15 +131,7 @@
     width: auto
   }
 
-  .heroTwo{
-    color:#D3D3D3;
-    font-size: 20px;
-    padding: 10px;
-  }
-
-
-
-.hero button{
+ .hero button{
       border: none;
       width: 200px;
       height: 50px
@@ -149,6 +145,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.mainH{
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .workSection{
@@ -178,7 +179,8 @@
 }
 
 .head{
-    margin-top: 100px
+    margin-top: 100px;
+    text-align: left;
 }
 
 .contacts{
@@ -204,7 +206,7 @@
 .body{
     color: white;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .button{
@@ -268,4 +270,9 @@ label{
   width: 20%;
   padding: 5px;
   opacity: 55%
+}
+
+.inputs a{
+  text-decoration: none;
+  color:#D3D3D3
 }

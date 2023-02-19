@@ -11,36 +11,44 @@
 <body>
 
 <div class="navBar" id="myNavBar">
-    <a class="active" href="#">Isaiah David</a>
+    <a class="active" href="#">ID</a>
+    <a href= "javascript:void(0);" onclick="javascript:nav('about')">Technologies</a>
     <a href="javascript:void(0);" onclick="javascript:nav('projects')">Projects</a>
-    <a href= "javascript:void(0);" onclick="javascript:nav('about')">About Me</a>
     <a href="javascript:void(0);" onclick="javascript:nav('contact')">Contact</a>
     <a href="#" class="icon" id="icons" onclick="javascript:myFunction()">
         <i class="fa fa-bars"></i></a>
 </div>
 
 <div class="hero">
-    <div class="hero-text">
-        <h1>Hello, My Name is Isaiah!</h1>
-        <p>I am a Front-End Software Developer</p>
-        <button onclick="javascript:nav('me')">Get To Know Me</button>
-        <a href="idResume.pdf"><button>My Resume</button></a>
-    </div>
     <div class="hero-img">
         <img src="./IMG_6818.JPG" class="zayPic responsive">
      </div>
+    <div class="hero-text">
+        <p>Hello, my name is Isaiah! I am a</p>
+         <h1>Frontend Web Developer</h1>
+         <p>And I have a deep love for experiencing and learning new ideas, 
+            concepts, and technology. I'm excited to work with you!</p>
+       <!--<button onclick="javascript:nav('me')">Get To Know Me</button>-->
+        <a href="idResume.pdf"><button>My Resume</button></a>
+    </div>
 </div>
 
-<div class="heroTwo major-div" id="me">
-    <h1 class="head">A Little Bit About Me</h1>
+<div class="aboutMe mainH" id="about">
+    <h1 class="head">Skills & Technologies:</h1>
     <div class="bar"></div>
-    <p class="body">I am a Frontend Web Developer who has a deep love for experiencing and learning new ideas, 
-        concepts, and technology.
-        That is what attracted me to Web Development,
-        I am determined to continue to expand my knowledge and understanding so as to use my skills to positively impact those that I have the opportunity to work with. </p>
+    <p class="body"> HTML | CSS | Javascript | React | Debugging | Networking | Git | <a class="git" href="https://github.com/ZayDavid64">Github</a> | Object-oriented programming</p>
+    <p class="body">I always have had a love for tech ever since I was young.
+        The first language I ever taught myself was Python,
+        so that I could use the text editor in Adobe After Effects to make
+        proceduralized special effects in my videos. Now I refine my experience by doing freelance work, and personal passion projects. 
+    </p>
+    <p class="body">
+        Among my other intrests, I enjoy playing sports, gaming, watching anime, and videography. 
+    </p>
 </div>
 
-<div id="projects">
+</div>
+<div class="mainH" id="projects">
     <h1 class="head" >My Projects</h1>
     <div class="bar"></div>
     <div class="exp">
@@ -48,41 +56,23 @@
     </div>
     <div class="workSection">
         <div class="workSubSection">
-            <h3>Park PT Business Webpage</h3>
             <a class="proj" href="https://zaydavid64.github.io/ParkPT2/"><img src="./image1.jpeg"></a>
+            <h3>Park PT Business Webpage</h3>
         </div>
         <div class="workSubSection">
-            <h3>Rock Paper Scissors Game</h3>
             <a class="proj" href="https://zaydavid64.github.io/RPS/"><img src="./image0.png"></a>
+            <h3>Rock Paper Scissors Game</h3>
         </div>
         <div class="workSubSection">
-            <h3>Medical Notation App</h3>
             <a class="proj"><img src="./27282.jpg" ></a>
+            <h3>Medical Notation App</h3>
         </div>
     </div>
     </div>
 
-    <div class="aboutMe" id="about">
-        <h1 class="head">Skills & Technologies:</h1>
-        <div class="bar"></div>
-        <p class="body"> HTML | CSS | Javascript | React | Debugging | Networking | Git | <a class="git" href="https://github.com/ZayDavid64">Github</a> | Object-oriented programming</p>
-        <p class="body">I always have had a love for tech ever since I was young.
-            The first language I ever taught myself was Python,
-            so that I could use the text editor in Adobe After Effects to make
-            proceduralized special effects in my videos. A few years later, 
-            after getting my Associates Degree in Physical Therapy, I decided to take coding more seriously.</p>
-            <p class="body">I worked every day, between my secular and volunteer work to study Web Development and the languages associated
-            so that I could build a website from the ground up. As I learned and expanded my knowledge, I grew to love what I was learning.
-            As for now I refine my experience by doing freelance work, and personal passion projects. 
-            However, my dream is to be able to work in Software Development full time. 
-        </p>
-        <p class="body">
-            Among my other intrests, I enjoy playing sports, gaming, watching anime, and videography. 
-        </p>
-    </div>
-</div>
+    
 
-<div id="contact">
+<div class="mainH" id="contact">
     <h1 class="head" >Lets Talk!</h1>
     <div class="bar"></div>
     <p class="body">For Any Business Inquiry's Please Contact Me With The Info Below</p>
@@ -101,10 +91,10 @@
             <h3 id="fName" class="hmu">Isaiah David</h1>
             <div class="under">
                 <label for="lName">Email:</label></div>
-            <h3 id="lName" class="hmu">isaiahd10@icloud.com</h1>
+            <h3 id="lName" class="hmu"><a href = "mailto:isaiahd10@icloud.com">-isaiahd10@icloud.com-</a></h1>
             <div class="under">
-                <label for="subject">Location:</label></div>
-            <h3 id="subject" class="hmu">Bedminster, NJ</h1>
+                <label for="subject">LinkedIn:</label></div>
+            <h3 id="subject" class="hmu"><a href="https://www.linkedin.com/in/isaiah-david-8804b7166/">-My Profile-</a></h1>
             <!--<button type="submit"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></button>-->
          </div>
         </form>
